@@ -1,0 +1,68 @@
+*, h1, h2, h3, h4, h5, h6, p, ul {
+    margin:unset;
+    padding:unset;
+}
+
+.wt_center {
+	/**Start of vertical/horizontal centering**/
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	/**End of vertical/horizontal centering**/
+	text-align:center;
+	width:100%;
+	letter-spacing:0.1em;
+}
+
+.banner {
+    height:100vh;
+    background-image:url("../images/cafe.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:white;
+}
+
+.banner h1 {
+    line-height:15px;
+}
+
+.seb {
+    font-size:.3em;
+}
+
+.m_menu {
+    position:fixed;
+    top:10px;
+    right:10px;
+    color:white;
+}
+
+.who_are_we {
+    width:80%;
+    margin-left:10%;
+}
+
+.h_our_menu {
+}
+
+.menu_bar {
+    height:100px;
+    width:100%;
+    background-color:blue;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.h_our_location {
+}
+
+.location_bar {
+    width:100%;
+    padding-top:100%;
+    background-color:blue;
+    margin-top:10px;
+    margin-bottom:10px;
+    position:relative;
+    color:white;
+}
