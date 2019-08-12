@@ -20,6 +20,7 @@
     background-image:url("../images/cafe.jpg");
     background-size:cover;
     background-repeat:no-repeat;
+    background-attachment:fixed;
     color:white;
 }
 
@@ -41,9 +42,14 @@
 .who_are_we {
     width:80%;
     margin-left:10%;
+    padding-top:60px;
+    padding-bottom:60px;
+    text-align:center;
 }
 
 .h_our_menu {
+    padding-bottom:60px;
+    text-align:center;
 }
 
 .menu_bar {
@@ -55,6 +61,7 @@
 }
 
 .h_our_location {
+    text-align:center;
 }
 
 .location_bar {
@@ -65,4 +72,65 @@
     margin-bottom:10px;
     position:relative;
     color:white;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.location_bar_0 {
+    background-image:url("../images/nyc.jpg");
+}
+
+.location_bar_1 {
+    background-image:url("../images/philly.jpg");
+}
+
+.sec_label {
+    padding-bottom:40px;
+}
+
+.hsq_menu {
+    width:100%;
+    padding-top:45%;
+    display:block;
+    color:white;
+    position:relative;
+}
+
+.hsq_h1 {
+    font-size:2em;
+}
+
+.waw_text {
+    font-size:.85em;
+    line-height:2em;
+}
+
+.hsq_0 {background-image:url("../images/menu.jpg");background-size:cover;background-repeat:no-repeat;}
+.hsq_1 {background-image:url("../images/nyc.jpg");background-size:cover;background-repeat:no-repeat;}
+.hsq_2 {background-image:url("../images/storefront.jpg");background-size:cover;background-repeat:no-repeat;}
+
+/**HOMEPAGE CONTACT**/
+.h_contact {
+    width:80%;
+    margin-left:10%;
+}
+
+input, label, textarea {
+    display:block;
+    width:100%;
+}
+
+footer {
+    text-align:center;
+    background-color:#131313;
+    color:white;
+    padding-top:60px;
+}
+
+.flag_size {
+    width:35%;
+}
+
+.footer_menu {
+    padding:20px 0;
 }
