@@ -16,10 +16,14 @@
 
 <body>
 
+        <style>
+                @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap');
+                </style>
+
 <div id="container">
 
     <nav>
-        <p class="m_menu">MENU</p>
+        <p class="m_menu"></p>
     </nav>
 
     <div class="banner">
@@ -29,31 +33,38 @@
 
     <div class="home_square_menu">
         <div class="hsq_menu hsq_0">
-            <h1 class="wt_center hsq_h1">MENU</h1>
+            <h1 class="wt_center hsq_h1 hidden animated">MENU</h1>
         </div>
         <div class="hsq_menu hsq_1">
-            <h1 class="wt_center hsq_h1">LOCATIONS</h1>
+            <h1 class="wt_center hsq_h1 hidden animated">LOCATIONS</h1>
         </div>
         <div class="hsq_menu hsq_2">
-            <h1 class="wt_center hsq_h1">CONTACT</h1>
+            <h1 class="wt_center hsq_h1 hidden animated">CONTACT</h1>
         </div>
     </div>
 
     <div class="who_are_we">
         <h1 class="sec_label">WHO WE ARE</h1>
+        <div class="line_seperate"></div>
         <p class="waw_text">Established in 2010 in Park Slope, Brooklyn, KONDITORI has grown to six locations as the go-to neighborhood coffeehouse. The creation of the flavorful Konditori coffee bean involves mixing Arabic beans from three different Central American countries through an air heated process which produces an exquisite flavor that is uniquely Konditori.</p>
+        <h6 class="read_more">READ MORE</h6>
     </div>
 
     <footer>
         <img src="images/swedishflag.jpg" class="flag_size">
-        <h3>KONDITORI</h3>
+        <h3 class="footer_name">KONDITORI</h3>
+        <form class="mailing_form">
+            <p>JOIN OUR MAILING LIST</p>
+            <input name="email" id="email" type="text" class="form_input_online">
+            <input type="submit" value="SUBMIT" class="sub_button" name="submit">
+        </form>
         <ul class="footer_menu">
-            <li>ABOUT US</li>
-            <li>MENU</li>
-            <li>LOCATIONS</li>
-            <li>CONTACT</li>
+            <li class="fm_list">ABOUT US</li>
+            <li class="fm_list">MENU</li>
+            <li class="fm_list">LOCATIONS</li>
+            <li class="fm_list">CONTACT</li>
         </ul>
-        <p>&copy;Copyright 2019 Konditori</p>
+        <p class="copyright">&copy;Copyright 2019 Konditori</p>
     </footer>
 
 </div>
