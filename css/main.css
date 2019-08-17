@@ -29,6 +29,10 @@ ul {
     color:white;
 }
 
+.banner_menu {
+    background-image:url("../images/menusm.jpg");
+}
+
 .banner h1 {
     line-height:15px;
 }
@@ -95,8 +99,8 @@ ul {
 }
 
 .sec_label {
-    padding-bottom:20px;
     font-weight:bold;
+    text-align:center;
 }
 
 .hsq_menu {
@@ -114,6 +118,30 @@ ul {
 .waw_text {
     font-size:.85em;
     line-height:2em;
+    width:100%;
+}
+
+.waw_text2 {
+    font-size:.85em;
+    line-height:1.5em;
+    width:100%;
+}
+
+.sec_desc {
+    width:100%;
+}
+
+.menu_section {
+    text-align:center;
+    padding-bottom:60px;
+}
+
+.menu_item {
+    font-weight:bold;
+}
+
+.menu_item_cont {
+    margin:20px 0;
 }
 
 .read_more {
@@ -133,6 +161,27 @@ ul {
 .hsq_0 {background-image:url("../images/menusm.jpg");background-size:cover;background-repeat:no-repeat;}
 .hsq_1 {background-image:url("../images/nycsm.jpg");background-size:cover;background-repeat:no-repeat;}
 .hsq_2 {background-image:url("../images/storefrontsm.jpg");background-size:cover;background-repeat:no-repeat;}
+
+/**LOCATION**/
+.loc_square {
+    width:100%;
+    padding-top:40%;
+    position:relative;
+    width:80%;
+    margin:25px 10%;
+}
+
+.loc_square {
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.ls_0 {background-image:url("../images/nycfd.jpg");}
+.ls_1 {background-image:url("../images/nycph.jpg");}
+.ls_2 {background-image:url("../images/nycps.jpg");}
+.ls_3 {background-image:url("../images/nycgp.jpg");}
+.ls_4 {background-image:url("../images/nycch.jpg");}
+.ls_5 {background-image:url("../images/philfd.jpg");}
 
 /**HOMEPAGE CONTACT**/
 .h_contact {
@@ -199,4 +248,25 @@ footer {
 
 .hidden {
     display:none;
+}
+
+.white_overlay {
+    background-color:white;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:10;
+}
+
+.to_top {
+    height:35px;
+    width:35px;
+    background-color:blue;
+    position:fixed;
+    bottom:15px;
+    right:15px;
+}
+
+.locations_banner {
+    background-image:url("../images/nycsm.jpg");
 }
