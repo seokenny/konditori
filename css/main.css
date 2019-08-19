@@ -278,6 +278,10 @@ footer {
     z-index:5;
 }
 
+.up_arrow {
+    width:50%;
+}
+
 .locations_banner {
     background-image:url("../images/nycsm.jpg");
 }
