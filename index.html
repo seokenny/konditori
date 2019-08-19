@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/burger.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -19,15 +20,34 @@
 <style>
     @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap');
 </style>
+<nav id="mobile_nav">
+        <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+    </nav>
+
+    <div class="mobile_nav_list animated hidden slideOutRight">
+            <ul class="m_nav_ul">
+                <div class="m_listed_items wt_center">
+                    <li class="m_nav_home">HOME</li>
+                    <li>ABOUT US</li>
+                    <li class="m_nav_menu">MENU</li>
+                    <li class="m_nav_location">LOCATIONS</li>
+                    <li>CONTACT</li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="to_top hidden animated">
+
+            </div>
 
 <div id="container">
     <div class="white_overlay animated hidden">
         
     </div>
-
-    <nav>
-        <p class="m_menu"></p>
-    </nav>
 
     <div class="banner">
         <h1 class="wt_center">KONDITORI<br>
@@ -72,15 +92,7 @@
 
 </div>
 
-<!-- <div id="container_menu">
-
-    <div class="to_top hidden animated">
-
-    </div>
-
-    <nav>
-        <p class="m_menu"></p>
-    </nav>
+<div id="container_menu" class="hidden">
 
     <div class="banner banner_menu">
         <h1 class="wt_center">MENU<br>
@@ -223,7 +235,7 @@
         </ul>
         <p class="copyright">&copy;Copyright 2019 Konditori</p>
     </footer>
-</div> -->
+</div>
 
 <div id="container_locations" class="hidden animated">
     
@@ -295,7 +307,7 @@
     
     </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/jquery-ui.js"></script>

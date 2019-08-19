@@ -265,8 +265,33 @@ footer {
     position:fixed;
     bottom:15px;
     right:15px;
+    z-index:5;
 }
 
 .locations_banner {
     background-image:url("../images/nycsm.jpg");
+}
+
+#mobile_nav {
+    position:fixed;
+    top:10px;
+    right:10px;
+    z-index:30;
+}
+
+.hamburger_inner {
+    background-color:white !important;
+}
+
+.mobile_nav_list {
+    background-color:rgba(255,255,255);
+    width:100%;
+    height:100vh;
+    position:fixed;
+    z-index:20;
+}
+
+.m_nav_ul {
+    height:100%;
+    width:100%;
 }
