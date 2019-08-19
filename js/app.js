@@ -48,20 +48,58 @@ $(".hsq_h1").on("click",function(){
 
 $(".hamburger").on("click",function(){
     $(".hamburger").toggleClass("is-active");
-    // if($(".hamburger").hasClass("is-active")){
-    //     $(".container").css("overflow-y", "hidden");
-    // }
     $(".mobile_nav_list").removeClass("hidden");
     $(".mobile_nav_list").toggleClass("slideInRight");
     $(".mobile_nav_list").toggleClass("slideOutRight");
 });
 
-// $(".m_nav_location").on("click",function(){
-//     $(".hamburger").toggleClass("is-active");
-//     $("#container").toggleClass("hidden");
-//     $("#container_locations").toggleClass("hidden");
-//     $(".mobile_nav_list").toggleClass("slideInRight");
-//     $(".mobile_nav_list").toggleClass("slideOutRight",function(){
-//         $(".mobile_nav_list").delay(500).addClass("hidden");
-//     });
-// });
+$(".m_nav_home").on("click",function(){
+    $(".hamburger").toggleClass("is-active");
+    $("#container_menu").addClass("hidden");
+    $("#container_locations").addClass("hidden");
+    $("#container").removeClass("hidden");
+    $(".mobile_nav_list").toggleClass("slideInRight");
+    $(".mobile_nav_list").toggleClass("slideOutRight");
+    $("html, body").animate({
+        scrollTop: $("#container").offset().top
+    },0);
+});
+
+$(".m_nav_menu").on("click",function(){
+    $(".hamburger").toggleClass("is-active");
+    $("#container").addClass("hidden");
+    $("#container_aboutus").addClass("hidden");
+    $("#container_locations").addClass("hidden");
+    $("#container_menu").removeClass("hidden");
+    $(".mobile_nav_list").toggleClass("slideInRight");
+    $(".mobile_nav_list").toggleClass("slideOutRight");
+    $("html, body").animate({
+        scrollTop: $("#container_menu").offset().top
+    },0);
+});
+
+$(".m_nav_location").on("click",function(){
+    $(".hamburger").toggleClass("is-active");
+    $("#container_aboutus").addClass("hidden");
+    $("#container_menu").addClass("hidden");
+    $("#container").addClass("hidden");
+    $("#container_locations").removeClass("hidden");
+    $(".mobile_nav_list").toggleClass("slideInRight");
+    $(".mobile_nav_list").toggleClass("slideOutRight");
+    $("html, body").animate({
+        scrollTop: $("#container_locations").offset().top
+    },0);
+});
+
+$(".m_nav_about").on("click",function(){
+    $(".hamburger").toggleClass("is-active");
+    $("#container_menu").addClass("hidden");
+    $("#container_locations").addClass("hidden");
+    $("#container").addClass("hidden");
+    $("#container_aboutus").removeClass("hidden");
+    $(".mobile_nav_list").toggleClass("slideInRight");
+    $(".mobile_nav_list").toggleClass("slideOutRight");
+    $("html, body").animate({
+        scrollTop: $("#container_aboutus").offset().top
+    },0);
+});

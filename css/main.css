@@ -61,6 +61,12 @@ ul {
     text-align:center;
 }
 
+.sec_spacing {
+    width:100%;
+    text-align:center;
+    margin-top:40px;
+}
+
 .h_our_menu {
     padding-bottom:60px;
     text-align:center;
@@ -127,6 +133,10 @@ ul {
     width:100%;
 }
 
+.waw_text_space {
+    margin-top:20px;
+}
+
 .sec_desc {
     width:100%;
 }
@@ -153,8 +163,7 @@ ul {
     height:2px;
     background-color:gray;
     width:80%;
-    margin-left:10%;
-    margin-bottom:20px;
+    margin:20px 0 20px 10%;
     border-radius:25%;
 }
 
@@ -261,7 +270,8 @@ footer {
 .to_top {
     height:35px;
     width:35px;
-    background-color:blue;
+    background-color:white;
+    box-shadow:0 0 1px #ddd;
     position:fixed;
     bottom:15px;
     right:15px;
@@ -294,4 +304,22 @@ footer {
 .m_nav_ul {
     height:100%;
     width:100%;
+}
+
+.owner_pic {
+    width:100%;
+    padding-top:100%;
+    margin:20px 0 0 0;
+    background-image:url("../images/per.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.owner_caption {
+    font-weight:bold;
+    font-size:1.1em;
+}
+
+.bolder {
+    font-weight:bold;
 }
