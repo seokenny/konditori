@@ -56,6 +56,7 @@ $(".hamburger").on("click",function(){
 $(".m_nav_home").on("click",function(){
     $(".hamburger").toggleClass("is-active");
     $("#container_menu").addClass("hidden");
+    $("#container_aboutus").addClass("hidden");
     $("#container_locations").addClass("hidden");
     $("#container").removeClass("hidden");
     $(".mobile_nav_list").toggleClass("slideInRight");
