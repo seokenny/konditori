@@ -327,3 +327,7 @@ footer {
 .bolder {
     font-weight:bold;
 }
+
+button:focus {
+    outline:0;
+}
