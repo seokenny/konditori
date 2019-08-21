@@ -82,7 +82,7 @@ $(".hsq_1, .fml_2").on("click",function(){
     $("html, body").animate({
         scrollTop: $("#container").offset().top
     },0);
-    window.history.pushState(null, null, "/locations.html");
+    window.history.pushState(null, null, "konditori.github.io/locations.html");
 
     $("#container").addClass("hidden");
     $("#container").addClass("fadeOut");
