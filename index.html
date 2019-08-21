@@ -41,6 +41,8 @@
     </ul>
 </div>
 
+<div class="white_overlay animated hidden"></div>
+
 <div class="to_top hidden animated">
     <img src="images/up-arrow.svg" class="up_arrow wt_center">
 </div>
@@ -80,10 +82,10 @@
             <input type="submit" value="SUBMIT" class="sub_button" name="submit">
         </form>
         <ul class="footer_menu">
-            <li class="fm_list">ABOUT US</li>
-            <li class="fm_list">MENU</li>
-            <li class="fm_list">LOCATIONS</li>
-            <li class="fm_list">CONTACT</li>
+            <li class="fm_list fml_0">ABOUT US</li>
+            <li class="fm_list fml_1">MENU</li>
+            <li class="fm_list fml_2">LOCATIONS</li>
+            <li class="fm_list fml_3">CONTACT</li>
         </ul>
         <p class="copyright">&copy;Copyright 2019 Konditori</p>
     </footer>
@@ -93,7 +95,7 @@
 
 
 <!--MENU-->
-<div id="container_menu" class="hidden">
+<div id="container_menu" class="hidden animated">
 
     <div class="banner banner_menu">
         <h1 class="wt_center">MENU<br>
@@ -229,10 +231,10 @@
             <input type="submit" value="SUBMIT" class="sub_button" name="submit">
         </form>
         <ul class="footer_menu">
-            <li class="fm_list">ABOUT US</li>
-            <li class="fm_list">MENU</li>
-            <li class="fm_list">LOCATIONS</li>
-            <li class="fm_list">CONTACT</li>
+            <li class="fm_list fml_0">ABOUT US</li>
+            <li class="fm_list fml_1">MENU</li>
+            <li class="fm_list fml_2">LOCATIONS</li>
+            <li class="fm_list fml_3">CONTACT</li>
         </ul>
         <p class="copyright">&copy;Copyright 2019 Konditori</p>
     </footer>
@@ -255,27 +257,74 @@
         <h3 class="sec_label">NEW YORK</h3>
         <div class="location_squares_contain">
             <div class="loc_square ls_0">
-                <p class="wt_center">NEW YORK FINANCIAL DISTRICT</p>
+                <div class="loc_square_info lsi_0 hidden">
+                    <div class="wt_center icons_contain">
+                        <ul>
+                            <li><img src="images/coffee-cup.svg" class="loc_item_icon"></li>
+                            <li><img src="images/tea-pot.svg" class="loc_item_icon"></li>
+                            <li><img src="images/wifi.svg" class="loc_item_icon"></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="wt_center loc_text">NEW YORK FINANCIAL DISTRICT</p>
             </div>
         </div>
         <div class="location_squares_contain">
             <div class="loc_square ls_1">
-                <p class="wt_center">PROSPECT HEIGHTS BROOKLYN</p>
+                <div class="loc_square_info lsi_1 hidden">
+                    <div class="wt_center icons_contain">
+                        <ul>
+                            <li><img src="images/coffee-cup.svg" class="loc_item_icon"></li>
+                            <li><img src="images/tea-pot.svg" class="loc_item_icon"></li>
+                            <li><img src="images/wifi.svg" class="loc_item_icon"></li>
+                            <li><img src="images/raisin-muffin.svg" class="loc_item_icon"></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="wt_center loc_text">PROSPECT HEIGHTS BROOKLYN</p>
             </div>
         </div>
         <div class="location_squares_contain">
             <div class="loc_square ls_2">
-                <p class="wt_center">PARK SLOPE 5TH AVE BROOKLYN</p>
+                <div class="loc_square_info lsi_2 hidden">
+                    <div class="wt_center icons_contain">
+                        <ul>
+                            <li><img src="images/coffee-cup.svg" class="loc_item_icon"></li>
+                            <li><img src="images/tea-pot.svg" class="loc_item_icon"></li>
+                            <li><img src="images/wifi.svg" class="loc_item_icon"></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="wt_center loc_text">PARK SLOPE 5TH AVE BROOKLYN</p>
             </div>
         </div>
         <div class="location_squares_contain">
             <div class="loc_square ls_3">
-                <p class="wt_center">GREENPOINT BROOKLYN</p>
+                <div class="loc_square_info lsi_3 hidden">
+                    <div class="wt_center icons_contain">
+                        <ul>
+                            <li><img src="images/coffee-cup.svg" class="loc_item_icon"></li>
+                            <li><img src="images/tea-pot.svg" class="loc_item_icon"></li>
+                            <li><img src="images/wifi.svg" class="loc_item_icon"></li>
+                            <li><img src="images/raisin-muffin.svg" class="loc_item_icon"></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="wt_center loc_text">GREENPOINT BROOKLYN</p>
             </div>
         </div>
         <div class="location_squares_contain">
             <div class="loc_square ls_4">
-                <p class="wt_center">COBBLE HILL BROOKLYN</p>
+                <div class="loc_square_info lsi_4 hidden">
+                    <div class="wt_center icons_contain">
+                        <ul>
+                            <li><img src="images/coffee-cup.svg" class="loc_item_icon"></li>
+                            <li><img src="images/tea-pot.svg" class="loc_item_icon"></li>
+                            <li><img src="images/wifi.svg" class="loc_item_icon"></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="wt_center loc_text">COBBLE HILL BROOKLYN</p>
             </div>
         </div>
     </div>
@@ -283,7 +332,17 @@
         <h3 class="sec_label">PENNSYLVANIA</h3>
         <div class="location_squares_contain">
             <div class="loc_square ls_5">
-                <p class="wt_center">FINANCIAL DISTRICT PHILADELPHIA</p>
+                <div class="loc_white_overlay"></div>
+                <div class="loc_square_info lsi_5 hidden">
+                    <div class="wt_center icons_contain">
+                        <ul>
+                            <li><img src="images/coffee-cup.svg" class="loc_item_icon"></li>
+                            <li><img src="images/tea-pot.svg" class="loc_item_icon"></li>
+                            <li><img src="images/wifi.svg" class="loc_item_icon"></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="wt_center loc_text">FINANCIAL DISTRICT PHILADELPHIA</p>
             </div>
         </div>
     </div>
@@ -297,10 +356,10 @@
             <input type="submit" value="SUBMIT" class="sub_button" name="submit">
         </form>
         <ul class="footer_menu">
-            <li class="fm_list">ABOUT US</li>
-            <li class="fm_list">MENU</li>
-            <li class="fm_list">LOCATIONS</li>
-            <li class="fm_list">CONTACT</li>
+            <li class="fm_list fml_0">ABOUT US</li>
+            <li class="fm_list fml_1">MENU</li>
+            <li class="fm_list fml_2">LOCATIONS</li>
+            <li class="fm_list fml_3">CONTACT</li>
         </ul>
         <p class="copyright">&copy;Copyright 2019 Konditori</p>
     </footer>
@@ -310,13 +369,19 @@
 
 
 <!--ABOUT-->
-<div id="container_aboutus" class="hidden">
+<div id="container_aboutus" class="hidden animated">
         
     <div class="banner">
         <h1 class="wt_center">ABOUT US<br>
         <span class="seb">KONDITORI</span></h1>
     </div>
-        
+    
+    <div class="konditori_def who_are_we">
+        <h4 class="bolder">KONDITORI</h4><p>(noun) \Khan- da- tor- ree\:</p>
+        <p>1. Traditional Swedish gathering place to enjoy warm drinks, fine baked goods and confections.</p>
+        <p>2. Where one goes to Fika (take a coffee or teabreak)</p>
+    </div>
+
     <div class="who_are_we">
         <h1 class="sec_label">WHO WE ARE</h1>
         <div class="line_seperate"></div>
@@ -360,10 +425,10 @@
             <input type="submit" value="SUBMIT" class="sub_button" name="submit">
         </form>
         <ul class="footer_menu">
-            <li class="fm_list">ABOUT US</li>
-            <li class="fm_list">MENU</li>
-            <li class="fm_list">LOCATIONS</li>
-            <li class="fm_list">CONTACT</li>
+            <li class="fm_list fml_0">ABOUT US</li>
+            <li class="fm_list fml_1">MENU</li>
+            <li class="fm_list fml_2">LOCATIONS</li>
+            <li class="fm_list fml_3">CONTACT</li>
         </ul>
         <p class="copyright">&copy;Copyright 2019 Konditori</p>
     </footer>
