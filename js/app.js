@@ -82,7 +82,7 @@ $(".hsq_1, .fml_2").on("click",function(){
     $("html, body").animate({
         scrollTop: $("#container").offset().top
     },0);
-    window.history.pushState(null, null, "konditori.github.io/locations.html");
+    // window.history.pushState(null, null, "konditori.github.io/locations.html");
 
     $("#container").addClass("hidden");
     $("#container").addClass("fadeOut");
@@ -112,6 +112,7 @@ $(".hamburger").on("click",function(){
 
 $(".m_nav_home").on("click",function(){
     $(".hamburger").toggleClass("is-active");
+    $("#container_contact").addClass("hidden");
     $("#container_menu").addClass("hidden");
     $("#container_aboutus").addClass("hidden");
     $("#container_locations").addClass("hidden");
@@ -126,6 +127,7 @@ $(".m_nav_home").on("click",function(){
 $(".m_nav_menu").on("click",function(){
     $(".hamburger").toggleClass("is-active");
     $("#container").addClass("hidden");
+    $("#container_contact").addClass("hidden");
     $("#container_aboutus").addClass("hidden");
     $("#container_locations").addClass("hidden");
     $("#container_menu").removeClass("hidden");
@@ -140,6 +142,7 @@ $(".m_nav_location").on("click",function(){
     $(".hamburger").toggleClass("is-active");
     $("#container_aboutus").addClass("hidden");
     $("#container_menu").addClass("hidden");
+    $("#container_contact").addClass("hidden");
     $("#container").addClass("hidden");
     $("#container_locations").removeClass("hidden");
     $(".mobile_nav_list").toggleClass("slideInRight");
@@ -153,12 +156,27 @@ $(".m_nav_about").on("click",function(){
     $(".hamburger").toggleClass("is-active");
     $("#container_menu").addClass("hidden");
     $("#container_locations").addClass("hidden");
+    $("#container_contact").addClass("hidden");
     $("#container").addClass("hidden");
     $("#container_aboutus").removeClass("hidden");
     $(".mobile_nav_list").toggleClass("slideInRight");
     $(".mobile_nav_list").toggleClass("slideOutRight");
     $("html, body").animate({
         scrollTop: $("#container_aboutus").offset().top
+    },0);
+});
+
+$(".m_nav_contact").on("click",function(){
+    $(".hamburger").toggleClass("is-active");
+    $("#container_menu").addClass("hidden");
+    $("#container_locations").addClass("hidden");
+    $("#container_aboutus").addClass("hidden");
+    $("#container").addClass("hidden");
+    $("#container_contact").removeClass("hidden");
+    $(".mobile_nav_list").toggleClass("slideInRight");
+    $(".mobile_nav_list").toggleClass("slideOutRight");
+    $("html, body").animate({
+        scrollTop: $("#container_contact").offset().top
     },0);
 });
 
