@@ -172,12 +172,16 @@ ul {
 .hsq_2 {background-image:url("../images/storefrontsm.jpg");background-size:cover;background-repeat:no-repeat;}
 
 /**LOCATION**/
+.location_squares_contain {
+    width:80%;
+    margin-left:10%;
+}
+
 .loc_square {
     width:100%;
     padding-top:40%;
     position:relative;
-    width:80%;
-    margin:25px 10%;
+    margin:25px 0;
 }
 
 .loc_square {
@@ -419,4 +423,85 @@ input, label, textarea {
     letter-spacing:5px;
     font-size:.75em;
     font-weight:bold;
+}
+
+.loc_squares_0 {}
+.loc_squares_1 {}
+.loc_squares_2 {}
+
+@media only screen and (min-width:768px){
+    .location_squares_contain {
+        width:40%;
+        display:inline-block;
+        margin-left:unset;
+    }
+    .loc_squares_0 {
+        margin-left:7.5%;
+        margin-right:2.5%;
+    }
+    .loc_squares_1 {
+        margin-left:2.5%;
+    }
+    .loc_squares_2 {
+        margin-left:7.5%;
+        margin-right:2.5%;
+    }
+    .loc_squares_3 {
+        margin-left:2.5%;
+    }
+    .loc_squares_4 {
+        margin-left:7.5%;
+        margin-right:2.5%;
+    }
+    .loc_square {
+        padding-top:100%;
+    }
+    /**MENU**/
+    .menu_width {
+        width:90%;
+        margin-left:5%;
+    }
+    .menu_item_cont {
+        width:45%;
+        display:inline-block;
+        vertical-align:top;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .location_squares_contain {
+        width:25%;
+    }
+    .loc_squares_0 {
+        margin-left:8.16%;
+        margin-right:2.16%;
+    }
+    .loc_squares_1 {
+        margin-right:2.16%;
+        margin-left:2.16%;
+    }
+    .loc_squares_2 {
+        margin-left:2.16%;
+    }
+    .loc_squares_3 {
+        margin-left:8.16%;
+        margin-right:2.16%;
+    }
+    .loc_squares_4 {
+        margin-left:2.16%;
+    }
+}
+
+@media only screen and (min-width:1475px){
+    .location_squares_contain {
+        width:365px;
+    }
+    .locations_row {
+        display:flex;
+        justify-content:center;
+    }
+    .loc_squares_0, .loc_squares_1, .loc_squares_2, .loc_squares_3, .loc_squares_4 {
+        margin:unset;
+    }
+
 }
