@@ -187,3 +187,79 @@ $(".ls_2").on("click",function(){$(".lsi_2").stop().fadeToggle();});
 $(".ls_3").on("click",function(){$(".lsi_3").stop().fadeToggle();});
 $(".ls_4").on("click",function(){$(".lsi_4").stop().fadeToggle();});
 $(".ls_5").on("click",function(){$(".lsi_5").stop().fadeToggle();});
+
+
+$(".read_more").on("mouseover",function(){
+    $(".read_more").stop().animate({
+        backgroundColor: 'black',
+        color: 'white'
+    });
+});
+
+$(".read_more").on("mouseout",function(){
+    $(".read_more").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".hsq_0").on("mouseover",function(){
+    $(".shadowoverlay_0").stop().fadeIn();
+});
+$(".hsq_0").on("mouseout",function(){
+    $(".shadowoverlay_0").stop().fadeOut();
+});
+$(".hsq_1").on("mouseover",function(){
+    $(".shadowoverlay_1").stop().fadeIn();
+});
+$(".hsq_1").on("mouseout",function(){
+    $(".shadowoverlay_1").stop().fadeOut();
+});
+$(".hsq_2").on("mouseover",function(){
+    $(".shadowoverlay_2").stop().fadeIn();
+});
+$(".hsq_2").on("mouseout",function(){
+    $(".shadowoverlay_2").stop().fadeOut();
+});
+
+$(".hsq_b0").on("mouseover",function(){
+    $(".hsq_b0").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".hsq_b0").on("mouseout",function(){
+    $(".hsq_b0").stop().animate({
+        backgroundColor: 'transparent',
+        color: 'white'
+    });
+});
+
+$(".hsq_b1").on("mouseover",function(){
+    $(".hsq_b1").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".hsq_b1").on("mouseout",function(){
+    $(".hsq_b1").stop().animate({
+        backgroundColor: 'transparent',
+        color: 'white'
+    });
+});
+
+$(".hsq_b2").on("mouseover",function(){
+    $(".hsq_b2").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".hsq_b2").on("mouseout",function(){
+    $(".hsq_b2").stop().animate({
+        backgroundColor: 'transparent',
+        color: 'white'
+    });
+});
