@@ -322,6 +322,18 @@ footer {
     cursor:pointer;
 }
 
+.m_listed_items {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.m_listed_items li {
+    cursor:pointer;
+    display:inline-block;
+    margin:10px 0;
+}
+
 .copyright {
     font-size:.7em;
     padding-bottom:35px;
@@ -338,6 +350,7 @@ footer {
     width:100%;
     position:fixed;
     z-index:10;
+    left:-100%;
 }
 
 .to_top {
@@ -415,6 +428,8 @@ input, label, textarea {
     display:block;
     border:unset;
     background-color:unset;
+    font-size:.3em;
+    color:black;
 }
 
 .form_input_oneline, .contact_textarea {
@@ -422,14 +437,23 @@ input, label, textarea {
     width:100%;
     color:black;
     margin:10px 0 15px 0;
+    font-size:.4em;
 }
 
 .form_label {
     text-align:left;
 }
 
+.contact_contain {
+    padding:30px;
+    background:rgba(255,255,255,.9);
+    width:80%;
+    margin-left:10%;
+    text-align:center;
+}
+
 .contact_textarea {
-    height:100px;
+    height:200px;
 }
 
 .submit_button {
@@ -438,7 +462,7 @@ input, label, textarea {
     width:100%;
     height:30px;
     letter-spacing:5px;
-    font-size:.75em;
+    font-size:.3em;
     font-weight:bold;
 }
 
@@ -475,8 +499,13 @@ input, label, textarea {
     cursor:pointer;
 }
 
+.contact_banner {
+    background-image:url("../images/storefrontsm.jpg");
+}
+
 .brand_name {
-    font-size:11vw;
+    font-size:7vw;
+    letter-spacing:2vw;
 }
 
 .desk_footer_list {
@@ -491,6 +520,10 @@ input, label, textarea {
 @media only screen and (min-width:600px){
     .flag_size {
         width:204px;
+    }
+    .contact_contain {
+        width:406px;
+        margin:auto;
     }
 }
 
@@ -556,6 +589,18 @@ input, label, textarea {
     }
     .hsq_h1 {
         cursor:pointer;
+    }
+    .banner {
+        background-image:url("../images/cafe.jpg");
+    }
+    .banner_menu {
+        background-image:url("../images/menu.jpg");
+    }
+    .locations_banner {
+        background-image:url("../images/nyc.jpg");
+    }
+    .contact_banner {
+        background-image:url("../images/storefront.jpg");
     }
 }
 
