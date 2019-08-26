@@ -39,6 +39,19 @@ $(window).scroll(function(){
     }
 });
 
+$(window).scroll(function(){
+    if ($(window).scrollTop()>50){
+        $(".desk_nav_list").stop().animate({
+            backgroundColor: 'black'
+        });
+    }
+    else if ($(window).scrollTop() == 0){
+        $(".desk_nav_list").stop().animate({
+            backgroundColor: 'transparent'
+        });
+    }
+});
+
 $(".to_top").on("click",function(){
     $("html, body").animate({
         scrollTop: $("#container").offset().top
@@ -110,7 +123,7 @@ $(".hamburger").on("click",function(){
     $(".mobile_nav_list").toggleClass("slideOutRight");
 });
 
-$(".m_nav_home").on("click",function(){
+$(".m_nav_home, .d_nav_home").on("click",function(){
     $(".hamburger").toggleClass("is-active");
     $("#container_contact").addClass("hidden");
     $("#container_menu").addClass("hidden");
@@ -124,7 +137,7 @@ $(".m_nav_home").on("click",function(){
     },0);
 });
 
-$(".m_nav_menu").on("click",function(){
+$(".m_nav_menu, .d_nav_menu").on("click",function(){
     $(".hamburger").toggleClass("is-active");
     $("#container").addClass("hidden");
     $("#container_contact").addClass("hidden");
@@ -138,7 +151,7 @@ $(".m_nav_menu").on("click",function(){
     },0);
 });
 
-$(".m_nav_location").on("click",function(){
+$(".m_nav_location, .d_nav_locations").on("click",function(){
     $(".hamburger").toggleClass("is-active");
     $("#container_aboutus").addClass("hidden");
     $("#container_menu").addClass("hidden");
@@ -152,7 +165,7 @@ $(".m_nav_location").on("click",function(){
     },0);
 });
 
-$(".m_nav_about").on("click",function(){
+$(".m_nav_about, .d_nav_about").on("click",function(){
     $(".hamburger").toggleClass("is-active");
     $("#container_menu").addClass("hidden");
     $("#container_locations").addClass("hidden");
@@ -166,7 +179,7 @@ $(".m_nav_about").on("click",function(){
     },0);
 });
 
-$(".m_nav_contact").on("click",function(){
+$(".m_nav_contact, .d_nav_contact").on("click",function(){
     $(".hamburger").toggleClass("is-active");
     $("#container_menu").addClass("hidden");
     $("#container_locations").addClass("hidden");
@@ -259,6 +272,104 @@ $(".hsq_b2").on("mouseover",function(){
 
 $(".hsq_b2").on("mouseout",function(){
     $(".hsq_b2").stop().animate({
+        backgroundColor: 'transparent',
+        color: 'white'
+    });
+});
+
+$(".ls_0").on("mouseover",function(){
+    $(".loc_text0").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".ls_0").on("mouseout",function(){
+    $(".loc_text0").stop().animate({
+        backgroundColor: 'transparent',
+        color: 'white'
+    });
+});
+
+$(".ls_1").on("mouseover",function(){
+    $(".loc_text1").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".ls_1").on("mouseout",function(){
+    $(".loc_text1").stop().animate({
+        backgroundColor: 'transparent',
+        color: 'white'
+    });
+});
+
+$(".ls_2").on("mouseover",function(){
+    $(".loc_text2").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".ls_2").on("mouseout",function(){
+    $(".loc_text2").stop().animate({
+        backgroundColor: 'transparent',
+        color: 'white'
+    });
+});
+
+$(".ls_3").on("mouseover",function(){
+    $(".loc_text3").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".ls_3").on("mouseout",function(){
+    $(".loc_text3").stop().animate({
+        backgroundColor: 'transparent',
+        color: 'white'
+    });
+});
+
+$(".ls_4").on("mouseover",function(){
+    $(".loc_text4").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".ls_4").on("mouseout",function(){
+    $(".loc_text4").stop().animate({
+        backgroundColor: 'transparent',
+        color: 'white'
+    });
+});
+
+$(".ls_5").on("mouseover",function(){
+    $(".loc_text5").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".ls_5").on("mouseout",function(){
+    $(".loc_text5").stop().animate({
+        backgroundColor: 'transparent',
+        color: 'white'
+    });
+});
+
+$(".sub_button").on("mouseover",function(){
+    $(".sub_button").stop().animate({
+        backgroundColor: 'white',
+        color: 'black'
+    });
+});
+
+$(".sub_button").on("mouseout",function(){
+    $(".sub_button").stop().animate({
         backgroundColor: 'transparent',
         color: 'white'
     });

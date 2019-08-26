@@ -33,10 +33,6 @@ ul {
     background-image:url("../images/menusm.jpg");
 }
 
-.banner h1 {
-    line-height:15px;
-}
-
 .down_arrow {
     height:20px;
     margin-top:20px;
@@ -145,6 +141,7 @@ ul {
 .menu_section {
     text-align:center;
     padding-bottom:60px;
+    margin:30px;
 }
 
 .menu_item {
@@ -153,6 +150,8 @@ ul {
 
 .menu_item_cont {
     margin:20px 0;
+    width:80%;
+    margin-left:10%;
 }
 
 .read_more {
@@ -190,11 +189,9 @@ ul {
     padding-top:40%;
     position:relative;
     margin:25px 0;
-}
-
-.loc_square {
     background-size:cover;
     background-repeat:no-repeat;
+    cursor:pointer;
 }
 
 .ls_0 {background-image:url("../images/nycfd.jpg");}
@@ -210,8 +207,9 @@ ul {
 .loc_text {
     display:inline-block;
     width:75%;
-    background:rgba(255,255,255,.85);
+    color:white;
     font-weight:bold;
+    border:2px solid white;
     padding:10px 0;
 }
 
@@ -268,6 +266,15 @@ footer {
     background-color:#131313;
     color:white;
     padding-top:50px;
+}
+
+.mobile_footer {
+    text-align:center;
+    padding-top:50px;
+}
+
+.desk_footer {
+
 }
 
 .flag_size {
@@ -440,15 +447,45 @@ input, label, textarea {
 .loc_squares_2 {}
 
 .menu_width {
-    background:#f8f6ee;
-    margin-top:50px;
-    margin-bottom:50px;
+    width:100%;
+    margin-left:unset;
 }
 
 .konditori_def {
     background-color:#f8f6ee;
     width:100% !important;
     margin-left:unset !important;
+}
+
+.desk_nav_list {
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    z-index:20;
+}
+
+.d_nav {
+    color:white;
+    font-size:.65em;
+    letter-spacing:.1em;
+    font-weight:bold;
+    margin:20px 2.5%;
+    cursor:pointer;
+}
+
+.brand_name {
+    font-size:11vw;
+}
+
+.desk_footer_list {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.footer_menu, .footer_flag, .footer_sub {
+    width:33%;
 }
 
 @media only screen and (min-width:600px){
@@ -490,7 +527,8 @@ input, label, textarea {
         margin-left:5%;
     }
     .menu_item_cont {
-        width:45%;
+        width:40%;
+        margin:30px 2%;
         display:inline-block;
         vertical-align:top;
     }
@@ -510,7 +548,33 @@ input, label, textarea {
     }
 }
 
-@media only screen and (min-width:880px){
+@media only screen and (min-width:800px){
+    .hsq_menu {
+        width:33.3333%;
+        padding-top:17.5%;
+        display:inline-block;
+    }
+    .hsq_h1 {
+        cursor:pointer;
+    }
+}
+
+@media only screen and (max-width:1023px){
+    #mobile_nav {
+        display:block;
+    }
+    #desk_nav {
+        display:none;
+    }
+    .desk_footer {
+        display:none;
+    }
+    .mobile_footer {
+        display:block;
+    }
+    .footer_menu {
+        width:unset;
+    }
 }
 
 @media only screen and (min-width:1024px){
@@ -546,29 +610,28 @@ input, label, textarea {
     /* .waw_text {
         font-size:1.25em;
     } */
-    .hsq_menu {
-        width:33.3333%;
-        padding-top:17.5%;
-        display:inline-block;
+    #mobile_nav {
+        display:none;
     }
-    .hsq_h1 {
-        cursor:pointer;
+    #desk_nav {
+        display:block;
+    }
+    .mobile_footer {
+        display:none;
+    }
+    .desk_footer {
+        display:block;
+    }
+}
+
+@media only screen and (min-width:1350px){
+    .menu_width {
+        width:1000px;
     }
 }
 
 @media only screen and (min-width:1475px){
-    .location_squares_contain {
-        width:365px;
-    }
-    .locations_row {
-        display:flex;
-        justify-content:center;
-        width:85%;
-        margin-left:7.5%;
-    }
-    .loc_squares_0, .loc_squares_1, .loc_squares_2, .loc_squares_3, .loc_squares_4 {
-        margin:unset;
-    }
+
 
 }
 
@@ -586,4 +649,12 @@ input, label, textarea {
     padding:10px 15px;
     font-weight:bold;
     font-size:1.1em;
+}
+
+.black_overlay {
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,.30);
+    position:absolute;
+    top:0;
 }
