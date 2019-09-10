@@ -29,6 +29,10 @@ ul {
     color:white;
 }
 
+.about_banner {
+    background-image:url("../images/aboutus.jpg");
+}
+
 .banner_menu {
     background-image:url("../images/menusm.jpg");
 }
@@ -592,6 +596,9 @@ input, label, textarea {
     }
     .banner {
         background-image:url("../images/cafe.jpg");
+    }
+    .about_banner {
+        background-image:url("../images/aboutus.jpg");
     }
     .banner_menu {
         background-image:url("../images/menu.jpg");
